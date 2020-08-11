@@ -79,12 +79,12 @@ return inquirer.prompt([
           {
             type: 'input',
             name: 'tests',
-            message: 'Provide a description of the project (Required)',
+            message: 'Describe testing procedures.',
             validate: nameInput => {
                 if (nameInput) {
                   return true;
                 } else {
-                  console.log('Please describe your project!');
+                  console.log('Please describe testing procedures!');
                   return false;
                 }
               }

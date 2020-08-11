@@ -1,7 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  ## https://img.shields.io/badge/<license>-<${generateBadge(data)}>-<blue>
+  ${generateBadge(data)}
   # ${data.title}
 
   ## Description
@@ -55,7 +55,7 @@ function generateMarkdown(data) {
    if (data.license === "MIT") {
       return "MIT";
    }
-   else if (data.license === "GPL") {
+   else  {
      return "GPL";
    }
 
